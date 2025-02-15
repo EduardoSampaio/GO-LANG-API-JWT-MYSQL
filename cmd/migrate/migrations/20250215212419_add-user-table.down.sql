@@ -1,0 +1,10 @@
+CREATE TABLE IF NOT EXISTS users (
+    "id" INT NOT NULL,
+    "name" VARCHAR(30) NOT NULL,
+    "email" VARCHAR(30) NOT NULL,
+    "password"  VARCHAR(100) NOT NULL,
+    "created_at" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+
+    PRIMARY KEY("id")
+    UNIQUE KEY(email)
+);
